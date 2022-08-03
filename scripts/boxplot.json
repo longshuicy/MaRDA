@@ -1,0 +1,19 @@
+{
+   "$schema":"https://vega.github.io/schema/vega-lite/v4.json",
+   "mark":"boxplot",
+   "data":{
+      "format":{
+         "type":"csv"
+      }
+   },
+   "encoding":{
+      "y":{
+         "field":"Turns",
+         "title":"Turns",
+         "type":"quantitative",
+         "scale":{
+            "zero":false
+         }
+      }
+   }
+}

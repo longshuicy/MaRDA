@@ -1,0 +1,16 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data":{
+      "format":{
+         "type":"csv"
+      }
+   },
+  "mark": {
+    "type": "point",
+    "tooltip": true
+  },
+  "encoding": {
+    "x": {"field": "Turns", "type": "quantitative"},
+    "y": {"field": "Ic(A)", "type": "quantitative"}
+  }
+}
