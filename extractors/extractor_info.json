@@ -22,7 +22,6 @@
     },
     "external_services": [],
     "dependencies": [
-        "seaborn",
         "numpy",
         "pandas",
         "matplotlib",

@@ -1,5 +1,4 @@
 pyclowder>=2.4.1
-seaborn
 numpy
 pandas
 matplotlib
