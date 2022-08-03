@@ -1,0 +1,31 @@
+{
+    "@context": "http://clowder.ncsa.illinois.edu/contexts/extractors.jsonld",
+    "name": "TurnsIcExtractor",
+    "version": "1.0",
+    "description": "Turns and Ic plotter",
+    "author": "Ruijie, Zhu <ruijiezhu2021@u.northwestern.edu>",
+    "contexts": [
+        {
+
+        }
+    ],
+    "repository": [
+        {
+            "repType": "git",
+            "repUrl": "https://github.com/longshuicy/MaRDA/tree/main/extractors/turns-Ic-extractor.git"
+        }
+    ],
+    "process": {
+        "file": [
+            "text/csv"
+        ]
+    },
+    "external_services": [],
+    "dependencies": [
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "scipy"
+    ],
+    "bibtex": []
+}
