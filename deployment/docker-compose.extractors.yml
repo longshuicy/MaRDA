@@ -92,7 +92,7 @@ services:
       - RABBITMQ_URI=${RABBITMQ_URI:-amqp://guest:guest@rabbitmq/%2F}
 
   testPropExtractor:
-    image: test-prop-extracotr:1.0
+    image: test-prop-extractor:1.0
     restart: unless-stopped
     networks:
       - clowder
