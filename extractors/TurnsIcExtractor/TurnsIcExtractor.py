@@ -43,6 +43,7 @@ class TurnsIcExtractor(Extractor):
         figure = os.path.splitext(original_filename)[0] + ".png"
         plt.savefig(figure)
         pyclowder.files.upload_preview(connector, host, secret_key, file_id, figure)
+        plt.close()
         
 
 if __name__ == "__main__":

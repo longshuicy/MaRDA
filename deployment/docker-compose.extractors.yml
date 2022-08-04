@@ -81,7 +81,18 @@ services:
       - RABBITMQ_URI=${RABBITMQ_URI:-amqp://guest:guest@rabbitmq/%2F}
 
   turnsIcExtractor:
-    image: turns-ic-extracto:1.0
+    image: turns-ic-extractor:1.0
+    restart: unless-stopped
+    networks:
+      - clowder
+    depends_on:
+      - rabbitmq
+      - clowder
+    environment:
+      - RABBITMQ_URI=${RABBITMQ_URI:-amqp://guest:guest@rabbitmq/%2F}
+
+  testPropExtractor:
+    image: test-prop-extractor:1.0
     restart: unless-stopped
     networks:
       - clowder
