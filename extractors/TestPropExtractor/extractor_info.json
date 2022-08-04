@@ -1,0 +1,31 @@
+{
+    "@context": "http://clowder.ncsa.illinois.edu/contexts/extractors.jsonld",
+    "name": "TestPropExtractor",
+    "version": "1.0",
+    "description": "Test and property plotter",
+    "author": "Ruijie, Zhu <ruijiezhu2021@u.northwestern.edu>",
+    "contexts": [
+        {
+
+        }
+    ],
+    "repository": [
+        {
+            "repType": "git",
+            "repUrl": "https://github.com/longshuicy/MaRDA/tree/main/extractors/test-prop-extractor.git"
+        }
+    ],
+    "process": {
+        "file": [
+            "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        ]
+    },
+    "external_services": [],
+    "dependencies": [
+        "numpy",
+        "pandas",
+        "matplotlib",
+        "openpyxl"
+    ],
+    "bibtex": []
+}
