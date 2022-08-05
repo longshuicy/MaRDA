@@ -32,7 +32,7 @@ class TestPropExtractor(Extractor):
         # 3. read data
         original_filename = resource["name"]
 
-        if 'Results Summary' in original_filename: # trigger
+        original_filename == 'Results_Summary.xlsx': # trigger
             sheet_names = load_workbook(inputfile).sheetnames
             
             # bar plot
@@ -69,6 +69,7 @@ class TestPropExtractor(Extractor):
                 ax.set_ylabel('Eind')
                 ax2.set_ylabel('Yind')
                 plt.xticks(rotation=45, horizontalalignment='right', fontweight='light',fontsize='x-large')
+                plt.title(sheet)
                 # save figure
                 figure = sheet+".jpg"
                 plt.savefig(figure,dpi=300,bbox_inches='tight')
